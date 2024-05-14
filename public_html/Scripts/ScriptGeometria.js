@@ -5,19 +5,19 @@ function cambiarPizzarra(){
    
     switch(variable){
         case "areaRectangulo":
-            llamarPizzarra('areaRectangulo.html');    
+            llamarPizzarra('./html/areaRectangulo.html');    
         break;
         case "areaTriangulo":
-            llamarPizzarra('areaTriangulo.html');
+            llamarPizzarra('./html/areaTriangulo.html');
             break;
         case "Trapecio":
-            llamarPizzarra('trapecio.html');
+            llamarPizzarra('./html/trapecio.html');
             break;
         case "areaCirculo":
-            llamarPizzarra('areaCirculo.html');
+            llamarPizzarra('./html/areaCirculo.html');
             break;
         case "agujeroCirculo":
-            llamarPizzarra('agujeroCirculo.html');
+            llamarPizzarra('./html/agujeroCirculo.html');
             break;
     }
 
