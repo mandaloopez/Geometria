@@ -1,0 +1,20 @@
+.container.header{
+    background-color: #68AFD9;
+}
+.container.body {
+    background-color: #a9ddfb;
+}
+.container.footer{
+    background-color:#396CBB;
+}
+.custom-height {
+    min-height: 50vh;
+  }
+ .custom-hr {
+    border: none;
+    border-top: 2px solid #000; 
+    margin: 10px 0; 
+  }
+ body{
+    background-color: #0D0D0D;
+  }

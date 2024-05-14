@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col-sm-12 col-md-4 px-2  mb-3">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 text-center text-md-left pb-3">
+                <p>Ingresá radio</p>
+                <input  class= "rounded" placeholder="r" id="phRadio" type="number" required/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 text-center text-md-left pb-3">
+                <p>Ingresá el angulo</p>
+                <input class= "rounded" placeholder="a" id="phAngulo" type="number" required/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 text-center mx-auto  pt-3">
+                <button class= "rounded btn-success" id="botonCalcular" onclick="calcularCirculo()">Calcular</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-4 text-center px-2">
+        <div class="row w-100 m-auto" id="div-canvas">
+            <img class="w-75 px-0 m-auto" id="imagenEjemplo" src="Imagenes/imagenCirculo.png"></img>
+            <div class="div-canvas text-center align-items-center px-0" >
+                <canvas class="w-75 px-0 m-auto" id="canvas" style="display: none;"></canvas>
+            </div>
+        </div>
+        <div class="div-textoResultados row" id="resultado"></div>
+
+    </div>
+    <div class="col-sm-12 col-md-4 text-center mx-auto p-3">       
+                <aside class="aside" id="aside">
+                    <h2>Formulas utilizadas</h2>
+                    <p>Perimetro del circulo: 2 * PI * Radio</p>
+                    <p>Superficie del circulo: PI * Radio<sup>2</sup></p>
+                    <p>Area sector circular: (Ángulo / 360) * PI * Radio<sup>2</sup></p>
+                    <p>Perimetro del Arco de circuferencia: Radio * (Ángulo / 57.3)</p>
+                    <p>Perimetro del sector circular: Perimetro Arco + Radio * 2</p>                  
+                </aside>            
+        
+    </div>
+</div>

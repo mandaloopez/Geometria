@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col-sm-12 col-md-4 px-2  mb-3">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 text-center text-md-left pb-3">
+                <p>Ingresá diametro</p>
+                <input  class= "rounded" placeholder="Diametro" id="phDiametro" type="number" required/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 text-center text-md-left pb-3">
+                <p>Cantidad de agujeros</p>
+                <input class= "rounded" placeholder="a" id="phAgujeros" type="number" required/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 text-center text-md-left pt-3">
+                <button class= "rounded btn-success" id="botonCalcular" onclick="calcularAgujero()">Calcular</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-4 text-center px-2">
+        <div class="row w-100 m-auto" id="div-canvas">
+            <img class="w-75 px-0 m-auto" id="imagenEjemplo" src="Imagenes/puntosEnCirculo.png"></img>
+            <div class="div-canvas text-center align-items-center px-0" >
+                <canvas class="w-75 px-0 m-auto" id="canvas" style="display: none;"></canvas>
+            </div>
+        </div>
+        <div class="div-textoResultados row" id="resultado"></div>
+
+    </div>
+    <div class="col-sm-12 col-md-4 text-center mx-auto p-3">
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <aside class="aside" id="aside" >
+                    <h3>Función para calcular distancia entre puntos</h3>
+                    <p>Utiliza esta función para calcular la distancia entre puntos en el perimetro de un circulo, donde todos los puntos tienen la misma separación entre ellos.</p>
+                    
+                </aside>
+            </div>
+        </div>
+    </div>
+</div>

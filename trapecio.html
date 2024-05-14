@@ -1,0 +1,49 @@
+<div class="row">
+    <div class="col-sm-12 col-md-4 px-2  mb-3">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 text-center text-md-left pb-3">
+                <p>Ingresá lado a</p>
+                <input class= "rounded" placeholder="Base a" id="phBase" type="number" required/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 text-center text-md-left pb-3">
+                <p>Ingresá lado b</p>
+                <input class= "rounded" placeholder="Base b" id="phTecho" type="number" required/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 text-center text-md-left pb-3">
+                <p>Ingresá h</p>
+                <input class= "rounded" placeholder="h" id="phAltura" type="number" required/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 text-center text-md-left  pt-3">
+                <button class= "rounded btn-success  " id="botonCalcular" onclick="calcularTrapecio()">Calcular</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-4 text-center px-2">
+        <div class="row w-100 m-auto" id="div-canvas">
+            <img class="w-75 px-0 m-auto" id="imagenEjemplo" src="Imagenes/imagenTrapecio.png"></img>
+            <div class="div-canvas text-center align-items-center px-0" >
+                <canvas class="w-75 px-0 m-auto" id="canvas" style="display: none;"></canvas>
+            </div>
+        </div>
+        <div class="div-textoResultados row" id="resultado"></div>
+
+    </div>
+    <div class="col-sm-12 col-md-4 text-center mx-auto p-3">
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <aside class="aside" id="aside">
+                    <h2>Formulas utilizadas</h2>
+                      <p>Perimetro: a + b + h + c </p>
+                      <p>Area: (a + b) / 2 * h</p>
+                      <p>Lado inclinado (C): &radic; ((b-a)<sup>2</sup> + h<sup>2</sup> )</p>
+                </aside>
+            </div>
+        </div>
+    </div>
+</div>
